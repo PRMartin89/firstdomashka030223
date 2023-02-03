@@ -1,9 +1,9 @@
 {
   "name": "hws2",
-  "homepage": "http://IgnatZakalinsky.github.io/hws2",
+  "homepage": "https://prmartin89.github.io/firstdomashka030223/",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {nvc
+  "dependencies": {
     "@emotion/react": "11.10.4",
     "@emotion/styled": "11.10.4",
     "@mui/material": "5.10.6",
