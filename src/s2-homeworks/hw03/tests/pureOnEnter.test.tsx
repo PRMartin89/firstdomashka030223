@@ -11,7 +11,7 @@ beforeEach(() => {
 })
 
 test('name 1', () => {
-    pureOnEnter({key: 'Enter'} as any, addUser)
+    pureOnEnter({key: 'Enter', target: {value: 'martin'}} as any, addUser)
     expect(added).toBe(true)
 })
 test('name 2', () => {
