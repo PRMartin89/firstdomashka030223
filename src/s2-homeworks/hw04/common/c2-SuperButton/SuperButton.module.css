@@ -1,16 +1,38 @@
 .button {
+    padding: 5px 24px;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 3px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .disabled {
+    background: #004D99;
+    opacity: 0.5;
+
+    color: #002E5C;
 }
 
 .secondary {
+    background: #C9E5FF;
+    border: 1px solid #0066CC;
+
+    color: #0066CC;
 }
 
 .default {
+    background: #004D99;
+
 }
 
 .red {
+    background: #CC1439;
+
 }
 
 .default:hover {
