@@ -1,4 +1,4 @@
-import React, {FC} from 'react'
+import React, {FC, useEffect} from 'react'
 import burgerIcon from './burger.svg'
 import s from './Header.module.css'
 import {useLocation} from 'react-router-dom'
@@ -11,8 +11,6 @@ type PropsType = {
 export const Header: FC<PropsType> = ({handleOpen}) => {
     // hw5-menu изначально отсутствует, при нажатии на бургер - появляется, при повторном нажатии исчезает
     const location = useLocation()
-    location.pathname = PATH.PRE_JUNIOR
-
     const currentPath = location.pathname
     const pageName =
         currentPath === PATH.PRE_JUNIOR
@@ -22,6 +20,10 @@ export const Header: FC<PropsType> = ({handleOpen}) => {
                 : currentPath === PATH.JUNIOR_PLUS
                     ? 'Junior Plus'
                     : 'Error'
+
+    useEffect(() => {
+        location.pathname = PATH.PRE_JUNIOR
+    },[])
 
     return (
         <>
