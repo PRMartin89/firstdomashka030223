@@ -12,7 +12,9 @@
 }
 
 .superInput {
-
+    border: 1px solid #D1D1D1 !important;
+    outline: 1px solid #D1D1D1 !important;
+    height: 36px;
 }
 
 .errorInput {
