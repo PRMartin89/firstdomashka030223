@@ -12,22 +12,21 @@ import s from './HW7.module.css'
 * */
 
 const arr = [
-    { id: 1, value: 'x' },
-    { id: 2, value: 'y' },
-    { id: 3, value: 'z' },
+    { id: 1, value: 'Junior' },
+    { id: 2, value: 'Middle' },
+    { id: 3, value: 'Senior' },
 ] // value может быть изменено
 
 const HW7 = () => {
-    const [value, onChangeOption] = useState(1) // селект и радио должны работать синхронно
-
+    const [value, onChangeOption] = useState(1)
     return (
         <div id={'hw7'}>
             <div className={s2.hwTitle}>Homework #7</div>
-
+            <hr/>
             {/*демонстрация возможностей компонент:*/}
             <div className={s2.hw}>
                 <div className={s.container}>
-                    <div>
+                    <div className={s.perviy}>
                         <SuperSelect
                             id={'hw7-super-select'}
                             options={arr}
@@ -35,7 +34,7 @@ const HW7 = () => {
                             onChangeOption={onChangeOption}
                         />
                     </div>
-                    <div>
+                    <div className={s.vtoroy}>
                         <SuperRadio
                             id={'hw7-super-radio'}
                             name={'hw7-radio'}
