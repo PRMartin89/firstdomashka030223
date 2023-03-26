@@ -31,18 +31,16 @@ const HW8 = () => {
     const [currentSort, setCurrentSort] = useState('')
 
     const finalPeople = people.map((u: UserType) => <User key={u._id} u={u}/>)
-    console.log(people)
-    console.log(finalPeople)
     const sortUp = () => {
         setPeople(
-            homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'})
+            homeWorkReducer(people, {type: 'sort', payload: 'up'})
         )
         setCurrentSort('up')
     }
 
     const sortDown = () => {
         setPeople(
-            homeWorkReducer(initialPeople, {type: 'sort', payload: 'down'})
+            homeWorkReducer(people, {type: 'sort', payload: 'down'})
         )
         setCurrentSort('down')
     }
